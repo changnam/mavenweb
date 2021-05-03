@@ -4,4 +4,31 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+    <context-param>
+    <param-name>DBUSER</param-name>
+    <param-value>cddba1</param-value>
+  </context-param>
+  <context-param>
+    <param-name>DBPWD</param-name>
+    <param-value>cn0012</param-value>
+  </context-param>
+  <context-param>
+    <param-name>DBURL</param-name>
+    <param-value>jdbc:mysql://localhost:3306/mysql_db</param-value>
+  </context-param>
+  
+  <listener>
+    <listener-class>com.honsoft.mavenweb.listener.AppContextListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.honsoft.mavenweb.listener.AppContextAttributeListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.honsoft.mavenweb.listener.MySessionListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.honsoft.mavenweb.listener.MyServletRequestListener</listener-class>
+  </listener>
+  
 </web-app>
