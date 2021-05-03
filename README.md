@@ -11,6 +11,8 @@ import existing maven project
 
 create folder src/main/java, src/test/java
 
+project properties - project facet - java - runtime - tomcat 추가
+
 mvn update project
 
 참고 url
